@@ -1,0 +1,44 @@
+main{
+    width: 80%;
+    margin: auto;
+}
+
+.diapo{
+    position: relative;
+    overflow: hidden;
+}
+
+.elements{
+    display: flex;
+}
+
+.element{
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img{
+    width: 100%;
+}
+
+.caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+}
+
+#nav-gauche, #nav-droite{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+#nav-droite{
+    right: 0;
+}
